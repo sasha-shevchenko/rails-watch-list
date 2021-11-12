@@ -2,10 +2,10 @@
 <ul>
     <%@list.bookmarks.each do |bookmark|%>
     <li>
-      <img src="<%=bookmark.movie.poster_url%>">
-      Title: <%="#{bookmark.movie.title}"%><br>
-      Overview: <%="#{bookmark.movie.overview}"%><br>
-      Rating: <%="#{bookmark.movie.rating}"%><br>
+      <img src="<%=bookmark.movie.poster_url%>"><br>
+      Title: <%=bookmark.movie.title%><br>
+      Overview: <%=bookmark.movie.overview%><br>
+      Rating: <%=bookmark.movie.rating%><br>
       Comment: <%=bookmark.comment%><br>
       <%=link_to "delete bookmark", bookmark_path(bookmark), method: :delete%><br>
     </li>
