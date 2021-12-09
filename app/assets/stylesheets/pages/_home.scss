@@ -65,3 +65,17 @@
   background-size: cover;
   background-position: center;
 };
+
+.landing-page-header-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.homepage-mid-header {
+  color: white;
+  font-size: 25px;
+  .red {
+    color: #E50815;
+  }
+}
