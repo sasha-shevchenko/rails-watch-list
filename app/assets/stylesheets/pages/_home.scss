@@ -1,9 +1,72 @@
 // Specific CSS for your home-page
+.homepage {
+  background-color: black;
+  height: 100vh;
+  width: 178vh;
+};
+
 .landing-page {
-  height: 200px;
+  height: 700px;
   width: 100%;
-  background-color: rgb(173, 229, 233);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+};
+
+.landing-page-logo {
+  position: absolute;
+  left: 20px;
+  top: 15px;
 }
+
+.netflix-logo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png');
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 70px;
+}
+
+
+.landing-page-header {
+  position: absolute;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+};
+
+.landing-page-subheader {
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  bottom: 280px;
+}
+
+.landing-page-button {
+  position: absolute;
+  bottom: 220px;
+  background-color: #E50815;
+  color: white;
+  font-size: 18px;
+  padding: 10px 23px;
+  border-radius: 4px;
+  border: none;
+  &:hover {
+    background-color: #F40612;
+  }
+}
+
+
+.landing-page-images {
+  width: 100%;
+  height: 100%;
+  display: flex;
+};
+
+.landing-page-poster {
+  border-bottom: 8px solid #222222;
+  background-size: cover;
+  background-position: center;
+};

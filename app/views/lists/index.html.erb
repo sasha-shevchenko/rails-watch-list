@@ -1,14 +1,67 @@
-<div class="landing-page">
-<h1>MOVIE LIST</h1>
-</div>
+<body class="homepage">
+  <div class="landing-page">
+    <div class="landing-page-logo">
+      <div class="netflix-logo"></div>
+    </div>
+    <h1 class="landing-page-header">Unlimited lists for your Netflix bookmarks.</h1>
+    <h2 class="landing-page-subheader">Access anywhere. At anytime.</h2>
+    <button type="button" class="landing-page-button">Create List</button>
+    <div class="landing-page-images">
+      <div
+        class="landing-page-poster bg-image"
+        style="
+          background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url('https://movieposters2.com/images/1327769-b.jpg');
+          height: 100%;
+          width: 20%;
+        "
+      ></div>
 
-<ul>
-  <% @lists.each do |list|%>
-    <li><%=link_to list.name, list_path(list)%></li>
-  <%end%>
-</ul>
+      <div
+        class="landing-page-poster bg-image"
+        style="
+          background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url('https://m.media-amazon.com/images/I/61sJaBqGxZL._AC_SL1184_.jpg');
+          height: 100%;
+          width: 20%;
+        "
+      ></div>
 
-<%= link_to "Create movie list", new_list_path %>
+      <div
+        class="landing-page-poster"
+        style="
+          background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url('https://m.media-amazon.com/images/I/91jrKX9xjQL._AC_SL1500_.jpg');
+          height: 100%;
+          width: 20%;
+        "
+      ></div>
+
+      <div
+        class="landing-page-poster"
+        style="
+          background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url('https://m.media-amazon.com/images/M/MV5BMjEwZWU4MWUtMGRjNS00NWQwLTg5ZGMtOTdiMDdiN2QyNDMwXkEyXkFqcGdeQXVyMTI0ODk4MjY4._V1_.jpg');
+          height: 100%;
+          width: 20%;
+        "
+      ></div>
+
+      <div
+        class="landing-page-poster"
+        style="
+          background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)), url('https://www.007museum.com/spectre_one_sheet.jpg');
+          height: 100%;
+          width: 20%;
+        "
+      ></div>
+    </div>
+  </div>
+
+  <ul>
+    <% @lists.each do |list|%>
+      <li><%=link_to list.name, list_path(list)%></li>
+    <%end%>
+  </ul>
+
+  <%= link_to "Create movie list", new_list_path %>
+</body>
 
 <%# <%= cl_image_tag("uuz3chravop9ikmnyppa",
       width: 400, height: 300, crop: :fill) %>
