@@ -14,18 +14,13 @@
   position: relative;
 };
 
-.landing-page-logo {
-  position: absolute;
-  left: 20px;
-  top: 15px;
-}
 
 .netflix-logo {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1280px-Netflix_2015_logo.svg.png');
-  background-size: cover;
-  background-position: center;
   width: 300px;
   height: 70px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
 
