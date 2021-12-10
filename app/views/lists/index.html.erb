@@ -4,7 +4,7 @@
     <h1 class="landing-page-header">Unlimited lists for your Netflix movie bookmarks.</h1>
     <h2 class="landing-page-subheader">Access anywhere. At anytime.</h2>
 
-    <button type="button" class="landing-page-button">Create List</button>
+    <%= link_to "Create List", new_list_path, class:"landing-page-button" %>
 
     <div class="landing-page-images">
       <div
@@ -72,7 +72,6 @@
 
 
 
-  <%= link_to "Create movie list", new_list_path %>
 </body>
 
 <%# <%= cl_image_tag("uuz3chravop9ikmnyppa",
