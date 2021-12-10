@@ -55,14 +55,22 @@
   </div>
 
   <div class="landing-page-header-container">
-  <h1 class="homepage-mid-header">Popular <span class="red">Netflix</span> Movie Lists</h1>
+      <h1 class="homepage-mid-header">Popular <span class="red">Netflix</span> Movie Lists</h1>
+    </div>
+
+  <div class="mid-homepage-section">
+    <div class="movie-card-container">
+      <ul>
+        <% @lists.each do |list|%>
+          <div class="movie-card">
+            <li><%=link_to list.name, list_path(list)%></li>
+          </div>
+        <%end%>
+      </ul>
+    </div>
   </div>
 
-  <ul>
-    <% @lists.each do |list|%>
-      <li><%=link_to list.name, list_path(list)%></li>
-    <%end%>
-  </ul>
+
 
   <%= link_to "Create movie list", new_list_path %>
 </body>
