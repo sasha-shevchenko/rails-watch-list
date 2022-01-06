@@ -59,15 +59,13 @@
     </div>
 
   <div class="mid-homepage-section">
-    <div class="movie-card-container">
-      <ul>
-        <% @lists.each do |list|%>
-          <div class="movie-card">
-            <li><%=link_to list.name, list_path(list)%></li>
-          </div>
-        <%end%>
-      </ul>
-    </div>
+    <ul class="movie-card-container">
+      <% @lists.each do |list|%>
+        <div class="movie-card">
+          <li><%=link_to list.name, list_path(list)%></li>
+        </div>
+      <%end%>
+    </ul>
   </div>
 
 

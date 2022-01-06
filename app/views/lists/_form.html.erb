@@ -1,4 +1,8 @@
-<%= simple_form_for [ @list] do |f| %>
-  <%= f.input :name %>
-  <%= f.submit "Create new list", class: "btn btn-primary" %>
-<% end %>
+<div class="new-movie-list-page">
+  <div class="new-movie-list-container">
+    <%= simple_form_for [ @list] do |f| %>
+      <%= f.input :name, :label => 'Movie list name'  %>
+      <%= f.submit "Create new list", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

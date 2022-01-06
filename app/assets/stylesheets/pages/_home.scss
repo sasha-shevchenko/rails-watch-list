@@ -76,7 +76,7 @@
 
 .homepage-mid-header {
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   .red {
     color: #E50815;
   }
@@ -90,9 +90,11 @@
 }
 
 .movie-card-container {
+  list-style-type: none;
   width: 1300px;
   height: 800px;
   background-color: #222222;
+  border-radius: 4px;
 
   grid-template-columns: 100px 50px 100px;
   grid-template-rows: 80px auto 80px;
@@ -104,4 +106,6 @@
   width: 300px;
   height: 50px;
   background-color: white;
+  border-radius: 4px;
+  margin: 20px;
 }
