@@ -1,9 +1,14 @@
 // Specific CSS for your home-page
-.homepage {
+
+body {
   background-color: black;
+  position: relative;
+}
+
+.homepage {
   height: 100vh;
   width: 178vh;
-};
+}
 
 .landing-page {
   height: 700px;
@@ -12,7 +17,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-};
+}
 
 
 .netflix-logo {
@@ -69,20 +74,24 @@
 };
 
 .landing-page-header-container {
+  display: block;
   display: flex;
   justify-content: center;
   padding: 50px;
+  height: 200px;
 }
 
 .homepage-mid-header {
   color: white;
   font-size: 30px;
+  height: 1000px;
   .red {
     color: #E50815;
   }
 }
 
 .mid-homepage-section {
+  display: block;
   width: 100%;
   height: 100px;
   display: flex;
@@ -108,4 +117,16 @@
   background-color: rgb(107, 107, 107);
   border-radius: 4px;
   margin: 40px auto;
+}
+
+.homepage-footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+
+
+  background-color: rgb(65, 27, 27);
+
+  margin-bottom: 0px;
 }
