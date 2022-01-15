@@ -62,7 +62,7 @@
     <ul class="movie-card-container">
       <% @lists.each do |list|%>
         <div class="movie-card">
-          <li><%=link_to list.name, list_path(list)%></li>
+          <li><%=link_to list.name, list_path(list), class: "test"%></li>
         </div>
       <%end%>
     </ul>
